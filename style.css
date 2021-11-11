@@ -37,7 +37,9 @@ body {
 
 .picture-of-orange {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
   background: url(/Sunnyside-Agency/images/mobile/image-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -82,17 +84,32 @@ body {
 
 .creatives-area {
   width: 100%;
-  height: 30%;
+  height: 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .creatives-text {
+  height: 30%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.25rem;
   letter-spacing: 0.75rem;
   color: white;
+}
+
+.creatives-button-area {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.arrow-down {
+  border: none;
+  background: none;
 }
 
 /* // small devices (landscape phones) // */
@@ -161,5 +178,16 @@ body {
   .hamburger-menu-button {
     width: 2rem;
     height: 1.25rem;
+  }
+}
+
+/* // really small devices (portrait mode) // */
+@media (width: 320px) and (orientation: portrait) {
+  .creatives-text {
+    font-size: 2rem;
+  }
+
+  .creatives-button-area {
+    padding-top: 30px;
   }
 }
