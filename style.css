@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* // reusable classes // */
+
+.barlow-font-600 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.barlow-font-800 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+}
+
+.fraunces-font-700 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.fraunces-font-900 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+/* // styling begins // */
+
+body {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-of-orange {
+  width: 100%;
+  height: 60vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-area {
+  width: 100%;
+  height: 15%;
+  background: lightgreen;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sunnyside-header {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.hamburger-menu-button {
+  width: 1.5rem;
+  height: 1rem;
+  background: none;
+  border: none;
+}
+
+.hamburger-menu-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.creatives-area {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creatives-text {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.75rem;
+  color: white;
+}
+
+/* // small devices (landscape phones) // */
+@media (min-width: 567.98px) {
+  .picture-of-orange {
+    height: 100vh;
+    background-position: 25% 65%;
+  }
+
+  .nav-area {
+    height: 25%;
+  }
+
+  .sunnyside-header {
+    margin-left: 50px;
+  }
+
+  .button-area {
+    margin-right: 50px;
+  }
+
+  .hamburger-menu-button {
+    width: 2rem;
+    height: 1.25rem;
+    background: none;
+    border: none;
+  }
+}
+
+/* // medium devices (tablets) // */
+@media (min-width: 767.98px) {
+  .picture-of-orange {
+    height: 60vh;
+  }
+
+  .sunnyside-header {
+    font-size: 2rem;
+  }
+
+  .hamburger-menu-button {
+    width: 2.5rem;
+    height: 1.5rem;
+  }
+}
+
+/* // large devices (laptops, desktops) // */
+@media (min-width: 991.98px) {
+}
+
+/* // extra large devices (desktops) // */
+@media (min-width: 1199.98px) {
+}
+
+/* // special screen styles // */
+
+/* // larger landscape devices (orientation: landscape makes it so the styles only apply if the width is greater than the height) // */
+@media (min-device-width: 800px) and (max-device-width: 895px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .picture-of-orange {
+    height: 100vh;
+  }
+
+  .sunnyside-header {
+    font-size: 1.75rem;
+  }
+
+  .hamburger-menu-button {
+    width: 2rem;
+    height: 1.25rem;
+  }
+}
