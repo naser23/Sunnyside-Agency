@@ -26,6 +26,52 @@
   font-weight: 900;
 }
 
+/* // primary // */
+.dark-desaturated-cyan {
+  color: hsl(167, 40%, 24%);
+}
+
+.soft-red {
+  color: hsl(7, 99%, 70%);
+}
+
+.yellow {
+  color: hsl(51, 100%, 49%);
+}
+
+.dark-blue {
+  color: hsl(198, 62%, 26%);
+}
+
+.dark-moderate-cyan {
+  color: hsl(168, 34%, 41%);
+}
+
+.white {
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* // neutral // */
+.very-dark-desaturated-blue {
+  color: hsl(212, 27%, 19%);
+}
+
+.very-dark-grayish-blue {
+  color: hsl(213, 9%, 39%);
+}
+
+.dark-grayish-blue {
+  color: hsl(232, 10%, 55%);
+}
+
+.grayish-blue {
+  color: hsl(210, 4%, 67%);
+}
+
 /* // styling begins // */
 
 body {
@@ -37,7 +83,7 @@ body {
 
 .picture-of-orange {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   background: url(/Sunnyside-Agency/images/mobile/image-header.jpg);
@@ -49,7 +95,6 @@ body {
 .nav-area {
   width: 100%;
   height: 15%;
-  background: lightgreen;
   display: flex;
   justify-content: space-between;
 }
@@ -68,6 +113,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  /* display: none; */
 }
 
 .hamburger-menu-button {
@@ -82,9 +128,13 @@ body {
   height: 100%;
 }
 
+.nav-links {
+  display: none;
+}
+
 .creatives-area {
   width: 100%;
-  height: 70%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,20 +203,86 @@ body {
     width: 2.5rem;
     height: 1.5rem;
   }
+
+  .creatives-text {
+    font-size: 3.5rem;
+    letter-spacing: 1.5rem;
+  }
 }
 
 /* // large devices (laptops, desktops) // */
 @media (min-width: 991.98px) {
+  .picture-of-orange {
+    background: url(/Sunnyside-Agency/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .button-area {
+    display: none;
+  }
+
+  /* // when nav links first appear // */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 60%;
+  }
+
+  .nav-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40%;
+  }
+
+  .nav-links ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    width: 20%;
+    height: 100%;
+  }
+
+  .nav-links ul li a {
+    text-decoration: none;
+  }
+
+  .nav-links ul li:hover {
+    background: #6ecffe;
+    color: white;
+    transition: all 0.2s ease;
+  }
+
+  .contact {
+    background-color: white;
+  }
+
+  .contact-link {
+    color: black;
+  }
+
+  /* .nav-links ul li a:hover {
+    transition: color 0.2s ease;
+  } */
 }
 
 /* // extra large devices (desktops) // */
 @media (min-width: 1199.98px) {
+  .nav-links {
+    font-size: 1.25rem;
+    width: 40%;
+  }
 }
 
 /* // special screen styles // */
 
 /* // larger landscape devices (orientation: landscape makes it so the styles only apply if the width is greater than the height) // */
-@media (min-device-width: 800px) and (max-device-width: 895px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-device-width: 800px) and (max-device-width: 915.98px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .picture-of-orange {
     height: 100vh;
   }
@@ -178,6 +294,10 @@ body {
   .hamburger-menu-button {
     width: 2rem;
     height: 1.25rem;
+  }
+
+  .creatives-text {
+    font-size: 2.25rem;
   }
 }
 
