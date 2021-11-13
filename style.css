@@ -140,7 +140,6 @@ body {
   justify-content: center;
   align-items: center;
   /* // come back to this // */
-  display: none;
 }
 
 .creatives-text {
@@ -171,6 +170,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .popup-menu {
