@@ -195,9 +195,22 @@ body {
   list-style-type: none;
 }
 
+.nav-links-mobile ul li {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-links-mobile ul li a {
   text-decoration: none;
   font-size: 1.25rem;
+}
+
+.contact-mobile {
+  background-color: yellow;
 }
 
 /* // small devices (landscape phones) // */
@@ -246,6 +259,19 @@ body {
     font-size: 3.5rem;
     letter-spacing: 1.5rem;
   }
+
+  .sunnyside-header {
+    font-size: 1.25rem;
+  }
+
+  .nav-links-mobile ul li {
+    height: 4rem;
+    width: 9rem;
+  }
+
+  .nav-links-mobile ul li a {
+    font-size: 1.75rem;
+  }
 }
 
 /* // large devices (laptops, desktops) // */
@@ -255,9 +281,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 60vh;
   }
   .button-area {
     display: none;
+  }
+
+  .sunnyside-header {
+    font-size: 1.5rem;
   }
 
   /* // when nav links first appear // */
@@ -288,6 +319,7 @@ body {
 
   .nav-links ul li a {
     text-decoration: none;
+    font-size: 1.25rem;
   }
 
   .nav-links ul li:hover {
@@ -304,6 +336,10 @@ body {
     color: black;
   }
 
+  .creatives-text {
+    letter-spacing: 0.75rem;
+  }
+
   /* .nav-links ul li a:hover {
     transition: color 0.2s ease;
   } */
@@ -311,6 +347,10 @@ body {
 
 /* // extra large devices (desktops) // */
 @media (min-width: 1199.98px) {
+  .picture-of-orange {
+    height: 80vh;
+  }
+
   .nav-links {
     font-size: 1.25rem;
     width: 40%;
