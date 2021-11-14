@@ -213,6 +213,23 @@ body {
   background-color: yellow;
 }
 
+#services {
+  width: 100%;
+}
+
+.egg-picture {
+  height: 40vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transform-text {
+  height: 50vh;
+  background: lightblue;
+}
+
 /* // small devices (landscape phones) // */
 @media (min-width: 567.98px) {
   .picture-of-orange {
@@ -340,9 +357,19 @@ body {
     letter-spacing: 0.75rem;
   }
 
-  /* .nav-links ul li a:hover {
-    transition: color 0.2s ease;
-  } */
+  .transform {
+    display: flex;
+  }
+
+  .egg-picture {
+    width: 50%;
+    height: 50vh;
+    order: 1;
+  }
+
+  .transform-text {
+    width: 50%;
+  }
 }
 
 /* // extra large devices (desktops) // */
