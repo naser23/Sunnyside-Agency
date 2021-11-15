@@ -421,6 +421,20 @@ body {
     font-size: 1.5rem;
   }
 
+  .egg-picture {
+    background: url(/Sunnyside-Agency/images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .pink-cup {
+    background: url(/Sunnyside-Agency/images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   /* // when nav links first appear // */
   .nav-links {
     display: flex;
