@@ -254,6 +254,40 @@ body {
   font-size: 1rem;
 }
 
+.pink-cup {
+  width: 100%;
+  height: 40vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stand-out-text {
+  width: 100%;
+  height: 50vh;
+  background: #fffbf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stand-out-header {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.stand-out-main-text {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
 /* // small devices (landscape phones) // */
 @media (min-width: 567.98px) {
   .picture-of-orange {
@@ -285,6 +319,14 @@ body {
   }
 
   .transform-text {
+    height: 100vh;
+  }
+
+  .pink-cup {
+    height: 100vh;
+  }
+
+  .stand-out-text {
     height: 100vh;
   }
 }
@@ -342,6 +384,23 @@ body {
 
   .learn-more {
     font-size: 1.5rem;
+  }
+  .pink-cup {
+    height: 40vh;
+  }
+
+  .stand-out-text {
+    height: 50vh;
+  }
+
+  .stand-out-header {
+    font-size: 3rem;
+  }
+
+  .stand-out-main-text {
+    font-size: 1.75rem;
+    padding: 30px 5%;
+    padding-bottom: 30px;
   }
 }
 
@@ -433,10 +492,36 @@ body {
   }
 
   .transform-main-text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .learn-more {
+    font-size: 1.25rem;
+  }
+
+  .pink-cup {
+    width: 50%;
+    height: 50vh;
+  }
+
+  .stand-out-text {
+    width: 50%;
+    height: 50vh;
+  }
+
+  .stand-out {
+    width: 100%;
+    display: flex;
+  }
+
+  .stand-out-header {
+    width: 80%;
+    text-align: left;
+    font-size: 2rem;
+    padding-bottom: 0px;
+  }
+
+  .stand-out-main-text {
     font-size: 1.25rem;
   }
 }
@@ -450,6 +535,37 @@ body {
   .nav-links {
     font-size: 1.25rem;
     width: 40%;
+  }
+
+  .transform-header {
+    padding-bottom: 20px;
+    width: 80%;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .transform-main-text {
+    font-size: 1.25rem;
+    width: 80%;
+    padding: 0 0;
+    text-align: left;
+  }
+
+  .learn-more {
+    width: 80%;
+    text-align: left;
+    padding-top: 30px;
+  }
+
+  .stand-out-header {
+    padding: 0 0;
+  }
+
+  .stand-out-main-text {
+    width: 80%;
+    text-align: left;
+    padding: 20px 0;
   }
 }
 
@@ -489,6 +605,22 @@ body {
   .transform-main-text {
     font-size: 1.5rem;
   }
+
+  .pink-cup {
+    height: 100vh;
+  }
+
+  .stand-out-text {
+    height: 100vh;
+  }
+
+  .stand-out-header {
+    font-size: 2.5rem;
+  }
+
+  .stand-out-main-text {
+    font-size: 1.5rem;
+  }
 }
 
 /* // really small devices (portrait mode) // */
@@ -499,5 +631,13 @@ body {
 
   .creatives-button-area {
     padding-top: 30px;
+  }
+
+  .transform-main-text {
+    padding-bottom: 10px;
+  }
+
+  .transform-header {
+    padding-bottom: 10px;
   }
 }
