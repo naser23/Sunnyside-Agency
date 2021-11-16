@@ -800,6 +800,7 @@ body {
 
   .testimonials-header {
     height: 15%;
+    letter-spacing: 1rem;
   }
   .testimonials-content {
     display: flex;
