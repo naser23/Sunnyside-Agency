@@ -92,7 +92,7 @@ body {
 
 .picture-of-orange {
   width: 100%;
-  height: 60vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   background: url(/Sunnyside-Agency/images/mobile/image-header.jpg);
@@ -170,6 +170,19 @@ body {
 .arrow-down {
   border: none;
   background: none;
+  cursor: pointer;
+}
+
+.arrow-down img {
+  height: 100%;
+}
+
+.arrow-down-scroll {
+  height: 8rem;
+  scroll-behavior: smooth;
+}
+
+.arrow-down::after {
 }
 
 /* // popup menu styling // */
@@ -227,7 +240,7 @@ body {
 }
 
 .egg-picture {
-  height: 40vh;
+  height: 50vh;
   background: url(/Sunnyside-Agency/images/mobile/image-transform.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -261,11 +274,43 @@ body {
   text-decoration: none;
   color: black;
   font-size: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.learn-more-soft-red {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.learn-more::after {
+  content: "";
+  position: absolute;
+  background: hsl(51, 100%, 49%);
+  width: 100%;
+  height: 10px;
+  opacity: 0.2;
+  left: 0;
+  bottom: 1%;
+}
+
+.learn-more-soft-red::after {
+  content: "";
+  position: absolute;
+  background: hsl(7, 99%, 70%);
+  width: 100%;
+  height: 10px;
+  opacity: 0.2;
+  left: 0;
+  bottom: 1%;
 }
 
 .pink-cup {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   background: url(/Sunnyside-Agency/images/mobile/image-stand-out.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -655,6 +700,10 @@ body {
   .learn-more {
     font-size: 1.5rem;
   }
+
+  .learn-more-soft-red {
+    font-size: 1.5rem;
+  }
   .pink-cup {
     height: 40vh;
   }
@@ -861,12 +910,27 @@ body {
     text-align: left;
     padding-left: 0px;
     padding-right: 0px;
+    line-height: 1.75rem;
   }
 
   .learn-more {
     font-size: 1.25rem;
     width: 80%;
     text-align: left;
+  }
+
+  .learn-more-soft-red {
+    font-size: 1.25rem;
+    width: 80%;
+    text-align: left;
+  }
+
+  .learn-more::after {
+    width: 9.5rem;
+  }
+
+  .learn-more-soft-red::after {
+    width: 9.5rem;
   }
 
   .pink-cup {
@@ -902,6 +966,7 @@ body {
     text-align: left;
     padding-left: 0px;
     padding-right: 0px;
+    line-height: 1.75rem;
   }
 
   .skills {
@@ -999,7 +1064,7 @@ body {
   }
 
   .footer {
-    height: 30vh;
+    height: 25vh;
   }
 
   .footer-header {
@@ -1049,9 +1114,15 @@ body {
     width: 80%;
     padding: 0 0;
     text-align: left;
+    line-height: 2rem;
   }
 
   .learn-more {
+    width: 80%;
+    text-align: left;
+    padding-top: 30px;
+  }
+  .learn-more-soft-red {
     width: 80%;
     text-align: left;
     padding-top: 30px;
@@ -1065,6 +1136,11 @@ body {
     width: 80%;
     text-align: left;
     padding: 20px 0;
+    line-height: 2rem;
+  }
+
+  .footer {
+    height: 30vh;
   }
 }
 
@@ -1149,6 +1225,10 @@ body {
   }
   .sugar-cubes {
     height: 50vh;
+  }
+
+  .footer {
+    height: 70vh;
   }
 }
 
