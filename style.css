@@ -362,13 +362,13 @@ body {
 /* // testimonials aside // */
 #testimonials {
   width: 100%;
-  height: 140vh;
+  height: auto;
   background: #fffbf8;
 }
 
 .testimonials-header {
   width: 100%;
-  height: 10%;
+  height: 10vh;
   letter-spacing: 0.25rem;
   display: flex;
   justify-content: center;
@@ -387,6 +387,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 .testimonial-picture {
   width: 5rem;
@@ -410,6 +411,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .jennie {
@@ -419,8 +421,98 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
+/* // pictures above footer // */
+.pictures-near-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.milk-picture {
+  width: 50%;
+  height: 25vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.orange-picture-2 {
+  width: 50%;
+  height: 25vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-gallery-orange.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cone-picture {
+  width: 50%;
+  height: 25vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-gallery-cone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sugar-cubes {
+  width: 50%;
+  height: 25vh;
+  background: url(/Sunnyside-Agency/images/mobile/image-gallery-sugar-cubes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* // footer styling // */
+.footer {
+  width: 100%;
+  height: 50vh;
+  background: #90d4c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-header {
+  font-size: 2rem;
+  color: hsl(168, 34%, 41%);
+}
+
+.footer-links {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-links ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #579b8c;
+}
+
+.socials {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.socials ul {
+  width: 60%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
 /* // small devices (landscape phones) // */
 @media (min-width: 567.98px) {
   .picture-of-orange {
@@ -480,6 +572,19 @@ body {
   .testimonial-main-text {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .milk-picture {
+    height: 50vh;
+  }
+  .orange-picture-2 {
+    height: 50vh;
+  }
+  .cone-picture {
+    height: 50vh;
+  }
+  .sugar-cubes {
+    height: 50vh;
   }
 }
 
@@ -611,6 +716,19 @@ body {
   .name-and-occupation {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .milk-picture {
+    height: 30vh;
+  }
+  .orange-picture-2 {
+    height: 30vh;
+  }
+  .cone-picture {
+    height: 30vh;
+  }
+  .sugar-cubes {
+    height: 30vh;
   }
 }
 
@@ -817,6 +935,39 @@ body {
     font-size: 1.25rem;
     padding-bottom: 50px;
   }
+
+  .pictures-near-footer {
+    flex-wrap: nowrap;
+  }
+
+  .milk-picture {
+    height: 50vh;
+    background: url(/Sunnyside-Agency/images/desktop/image-gallery-milkbottles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .orange-picture-2 {
+    height: 50vh;
+    background: url(/Sunnyside-Agency/images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .cone-picture {
+    height: 50vh;
+    background: url(/Sunnyside-Agency/images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .sugar-cubes {
+    height: 50vh;
+    background: url(/Sunnyside-Agency/images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 /* // extra large devices (desktops) // */
@@ -920,6 +1071,15 @@ body {
   }
   .photography {
     height: 100vh;
+  }
+
+  .testimonials-content {
+    height: auto;
+  }
+
+  .testimonials-header {
+    height: 4rem;
+    padding-bottom: 20px;
   }
 }
 
