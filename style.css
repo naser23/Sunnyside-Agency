@@ -683,6 +683,7 @@ body {
   .transform {
     display: flex;
     width: 100%;
+    height: 60vh;
   }
 
   .egg-picture {
@@ -691,7 +692,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     order: 1;
   }
 
@@ -723,7 +724,7 @@ body {
 
   .pink-cup {
     width: 50%;
-    height: 50vh;
+    height: 60vh;
     background: url(/Sunnyside-Agency/images/desktop/image-stand-out.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -732,6 +733,7 @@ body {
 
   .stand-out {
     width: 100%;
+    height: 60vh;
     display: flex;
   }
 
@@ -761,12 +763,12 @@ body {
 
   .graphic-design {
     width: 50%;
-    height: 50vh;
+    height: 60vh;
   }
 
   .photography {
     width: 50%;
-    height: 50vh;
+    height: 60vh;
   }
 
   .graphic-design-header {
