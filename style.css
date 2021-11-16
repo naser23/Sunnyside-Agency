@@ -6,6 +6,10 @@
 
 /* // reusable classes // */
 
+.span-font-change {
+  font-size: 1.25rem;
+}
+
 .barlow-font-400 {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
@@ -584,6 +588,30 @@ body {
     font-size: 1.75rem;
     padding: 0 10%;
   }
+
+  .testimonials-content {
+    height: 150vh;
+  }
+
+  .testimonials-header {
+    /* align-items: center; */
+    font-size: 2rem;
+  }
+
+  .testimonial-picture {
+    width: 10rem;
+    border-radius: 75px;
+  }
+
+  .testimonial-main-text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  .name-and-occupation {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 /* // large devices (laptops, desktops) // */
@@ -754,6 +782,37 @@ body {
 
   .photography-main-text {
     font-size: 1.25rem;
+  }
+
+  .emily {
+    height: 100%;
+  }
+  .thomas {
+    height: 100%;
+  }
+  .jennie {
+    height: 100%;
+  }
+
+  #testimonials {
+    height: 90vh;
+  }
+
+  .testimonials-header {
+    height: 15%;
+  }
+  .testimonials-content {
+    display: flex;
+    height: 85%;
+  }
+
+  .testimonial-picture {
+    width: 8rem;
+  }
+
+  .testimonial-main-text {
+    font-size: 1.25rem;
+    padding-bottom: 50px;
   }
 }
 
