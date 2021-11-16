@@ -248,7 +248,7 @@ body {
 
 .transform-main-text {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 0px 20px;
   padding-bottom: 20px;
 }
@@ -287,7 +287,7 @@ body {
 }
 
 .stand-out-main-text {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
   padding: 0px 20px;
   padding-bottom: 20px;
@@ -321,7 +321,7 @@ body {
 
 .graphic-design-main-text {
   padding-top: 20px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -351,8 +351,70 @@ body {
 
 .photography-main-text {
   padding-top: 20px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
+}
+
+/* // testimonials aside // */
+#testimonials {
+  width: 100%;
+  height: 140vh;
+  background: #fffbf8;
+}
+
+.testimonials-header {
+  width: 100%;
+  height: 10%;
+  letter-spacing: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-content {
+  width: 100%;
+  height: 90%;
+}
+
+.emily {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-picture {
+  width: 5rem;
+  border-radius: 50px;
+}
+
+.testimonial-main-text {
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.name-and-occupation {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.thomas {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jennie {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* // small devices (landscape phones) // */
@@ -403,6 +465,18 @@ body {
   .photography {
     height: 100vh;
   }
+
+  .testimonials-header {
+    align-items: end;
+  }
+  .testimonials-content {
+    height: 250vh;
+  }
+
+  .testimonial-main-text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 /* // medium devices (tablets) // */
@@ -439,7 +513,7 @@ body {
   }
 
   .egg-picture {
-    height: 50vh;
+    height: 40vh;
   }
 
   .transform-text {
@@ -475,6 +549,20 @@ body {
     font-size: 1.75rem;
     padding: 30px 5%;
     padding-bottom: 30px;
+  }
+
+  .graphic-design {
+    background: url(/Sunnyside-Agency/images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .photography {
+    background: url(/Sunnyside-Agency/images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .graphic-design-header {
@@ -789,5 +877,9 @@ body {
 
   .transform-header {
     padding-bottom: 10px;
+  }
+
+  .testimonials-content {
+    height: 150vh;
   }
 }
