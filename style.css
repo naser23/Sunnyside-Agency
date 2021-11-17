@@ -64,6 +64,10 @@
   display: none;
 }
 
+.ease {
+  transition: all 0.3s ease;
+}
+
 /* // neutral // */
 .very-dark-desaturated-blue {
   color: hsl(212, 27%, 19%);
@@ -85,7 +89,7 @@
 
 body {
   width: 100vw;
-  height: auto;
+  max-height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -182,14 +186,11 @@ body {
   scroll-behavior: smooth;
 }
 
-.arrow-down::after {
-}
-
 /* // popup menu styling // */
 .popup-menu-area {
   width: 100%;
   height: 70%;
-  display: flex;
+  /* // i dont think i need 2 display: flex; lines // */
   justify-content: center;
   align-items: center;
   display: none;
@@ -197,9 +198,21 @@ body {
 
 .popup-menu {
   width: 80%;
-  height: 90%;
+  height: 80%;
   margin-top: 40px;
+
   background: white;
+  position: relative;
+}
+
+.popup-menu::before {
+  content: "";
+  position: absolute;
+  border-top: 30px solid;
+  border-top-color: transparent;
+  border-right: 30px solid white;
+  right: 0;
+  top: -30px;
 }
 
 .nav-links-mobile {
@@ -582,6 +595,10 @@ body {
     height: 1.25rem;
     background: none;
     border: none;
+  }
+
+  .popup-menu {
+    height: 90%;
   }
 
   .egg-picture {

@@ -2,7 +2,6 @@
 // global variables //
 const hamburgerButton = document.querySelector(".hamburger-menu-button");
 const hamburgerIcon = document.querySelector(".hamburger-menu-icon");
-console.log(hamburgerIcon);
 const creativesArea = document.querySelector(".creatives-area");
 const popupMenu = document.querySelector(".popup-menu-area");
 let isOpen = false;
