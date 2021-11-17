@@ -8,7 +8,7 @@ link to project: https://naser23.github.io/Sunnyside-Agency/
 
 // Desktop Version //
 
-![](screenshots/Desktop-Screenshot.png);
+![](screenshots/Desktop-Screenshot.png)
 
 // Mobile Version //
 
